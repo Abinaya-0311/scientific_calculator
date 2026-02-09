@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a5acd, #7f7fd5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    background: #1e1e1e;
+    color: #fff;
+    padding: 25px;
+    border-radius: 20px;
+    width: 360px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.title {
+    text-align: center;
+    font-size: 26px;
+    background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #ff9a9e;
+    }
+    to {
+        text-shadow: 0 0 20px #fad0c4;
+    }
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.top-controls {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.top-controls button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.calculator {
+    margin-top: 10px;
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    background: #000;
+    color: #0f0;
+    font-size: 22px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    text-align: right;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    background: #2d2d2d;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #444;
+}
+
+.operator {
+    background: #ff9800;
+}
+
+.equal {
+    background: #00c896;
+}
+
+.clear {
+    background: #ff5252;
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+.hidden {
+    display: none;
+}
+
+.history h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#clearHistory {
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.footer {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+    opacity: 0.6;
+}

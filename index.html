@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="app">
+        <h1 class="title">Scientific Calculator</h1>
+        <p class="subtitle">Basic ↔ Scientific • Degree / Radian</p>
+
+        <div class="top-controls">
+            <button id="toggleBtn">Scientific Mode</button>
+            <button id="angleBtn">DEG</button>
+        </div>
+
+        <div class="calculator">
+            <input type="text" id="display" disabled />
+
+            <!-- Scientific -->
+            <div class="buttons scientific hidden">
+                <button class="btn func" data-fn="sin">sin</button>
+                <button class="btn func" data-fn="cos">cos</button>
+                <button class="btn func" data-fn="tan">tan</button>
+                <button class="btn func" data-fn="log">log</button>
+
+                <button class="btn func" data-fn="sqrt">√</button>
+                <button class="btn func" data-fn="pow">x²</button>
+                <button class="btn func" data-fn="pi">π</button>
+                <button class="btn clear">C</button>
+            </div>
+
+            <!-- Basic -->
+            <div class="buttons basic">
+                <button class="btn">7</button>
+                <button class="btn">8</button>
+                <button class="btn">9</button>
+                <button class="btn operator">÷</button>
+
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class="btn operator">×</button>
+
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn operator">−</button>
+
+                <button class="btn zero">0</button>
+                <button class="btn dot">.</button>
+                <button class="btn equal">=</button>
+                <button class="btn operator">+</button>
+            </div>
+        </div>
+
+        <!-- History -->
+        <div class="history">
+            <h3>
+                History
+                <button id="clearHistory">🗑</button>
+            </h3>
+            <ul id="historyList"></ul>
+        </div>
+
+
+        <p class="footer">Built with HTML • CSS • JavaScript</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
